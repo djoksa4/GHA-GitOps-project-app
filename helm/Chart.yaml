@@ -1,0 +1,9 @@
+apiVersion: v2
+name: GHA-GitOps-project-app
+description:  A Helm chart for deploying the GHA-GitOps-project-app on Kubernetes. 
+home: https://github.com/djoksa4/GHA-GitOps-project-app
+sources:
+  - https://github.com/djoksa4/GHA-GitOps-project-app
+type: application
+version: 0.0.0
+appVersion: 0.0.0
