@@ -46,4 +46,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: >
-            ${{ vars.DOCKERHUB_USERNAME }}/${{ steps.extract-repository-name.outputs.REPO_NAME }}:${{ steps.docker-image.outputs.IMAGE_NAME }}
+            ${{ vars.DOCKERHUB_USERNAME }}/${{ steps.extract-repo-name.outputs.REPO_NAME }}:${{ steps.docker-image.outputs.IMAGE_NAME }}
