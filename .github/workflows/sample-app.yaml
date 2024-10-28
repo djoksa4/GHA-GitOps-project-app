@@ -30,7 +30,7 @@ jobs:
       - name: Extract repo name
         id: extract-repo-name
         run: |
-          REPO_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2 | tr '[:upper:]' '[:lower:]')
           echo "REPO_NAME=${REPO_NAME}" >> $GITHUB_OUTPUT
       
       - name: Login to Docker registry
