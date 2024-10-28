@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "gha-gitops-project-app"
+version = "0.1.0"
+description = "GitOps with GitHub Actions"
+authors = ["Djordje Vodovar"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.4"
+uvicorn = "^0.32.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
