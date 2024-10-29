@@ -54,7 +54,7 @@ jobs:
           IMAGE_DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' "${{ vars.DOCKERHUB_USERNAME }}/${{ steps.extract-repository-name.outputs.REPO_NAME }}:${{ steps.docker-image.outputs.IMAGE_NAME }}" | cut -d "@" -f 2)
           echo "IMAGE_DIGEST=${IMAGE_DIGEST}" >> $GITHUB_OUTPUT
 
-      - name: Setup yq portable command-line YAML, JSON, XML, CSV, TOML and properties processor
+      - name: Setup yq portable command-line YAML processor
         uses: mikefarah/yq@v4.35.2
 
       - name: Update local Helm yaml Files
